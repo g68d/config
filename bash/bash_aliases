@@ -1,0 +1,31 @@
+# User specific aliases
+alias cdh='pushd ~'
+alias ..='cd ..'
+alias cd..='cd ..'
+alias ...='cd ../..'
+alias cd...='cd ../..'
+alias ls='ls -lA --color --group-directories-first | more'
+#alias la='ls -A --color --group-directories-first | more'
+#alias ll='ls -l --color --group-directories-first | more'
+alias mkcd='f(){ mkdir $@; cd $@; pwd ; unset -f f; }; f'
+alias finds='grep -wrn . -e'
+alias bashs='grep -wrn ~/.bash_history -e'
+alias bashd='less ~/.bash_history'
+alias sdup='sudo dnf update && sudo dnf upgrade -y'
+alias sdoff='sudo shutdown now'
+alias sdon='sudo shutdown now -r'
+
+
+alias bbclone='f(){ git clone git@bitbucket.org:$@.git ; unset -f f; }; f'
+alias ghclone='f(){ git clone alt-git@github.com:$@.git ; unset -f f; }; f'
+
+
+alias gitall='echo ""; echo "REMOTES"; git r;echo ""; echo "BRANCHES"; git b; echo ""; echo "COMMITS" ; git l; echo ""; echo "STATUS" ; git s'
+alias readme='echo "automatic READ ME" > README.md'
+alias giti='git init && echo "Automatic READ ME" > README.md && git add README.md && git commit -m "initial commit automated"'
+alias gitb='git branch production ; git branch version ; git branch staging ; git branch develop'
+
+
+alias sshagent='eval "ssh-agent"'
+alias sshadd='f(){ ssh-add ~/.ssh/$@ ; unset -f f; }; f'
+alias sshgen='ssh-keygen -t rsa -b 4096 -f '
