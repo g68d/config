@@ -1,0 +1,117 @@
+# git config --global core.excludesFile ~/.gitignore-global
+
+
+# Forced exclusions
+*.git-exclude*
+gitexclude/
+
+
+# Forced inclusions
+!*.git-include*
+!git-include/*
+!favicon*.*
+
+
+# Bundles
+*.7z
+*.arc
+*.deb
+*.dnf
+*.gz
+*.img
+*.iso
+*.rar
+*.rpm
+*.swp
+*.tar
+*.tgz
+*.vc
+*.yum
+*.zip
+
+
+# Linux Home Folders
+Desktop/
+Documents/
+Downloads/
+Dropbox/
+Music/
+Pictures/
+Public/
+Templates/
+Videos/
+git/
+.cache/
+.config/
+.gnupg/
+.ssh/
+
+
+# Compiles
+*.bin
+*.class
+*.com
+*.dll
+*.exe
+*.x86_64
+
+
+# Binary documents
+*.pcap
+*.docx
+*.pdf
+*.ppt
+*.pptx
+*.xls
+*.xlsx
+
+
+# Autosaves
+error_log
+.DS_Store
+.bash_history
+*~
+*#
+~$*.*
+*.log
+*.swp
+*.tmp
+*.temp
+temp/
+_temp/
+.cache/
+cache/
+run/tempfiles.d/
+
+
+# Media
+*.bmp
+*.gif
+*.ico
+*.icn
+*.jpg
+*.jpeg
+*.pdf
+*.png
+*.raw
+*.tif
+*.tiff
+*.webp
+
+# Streaming Media
+*.avi
+*.mkv
+*.mov
+*.mp2
+*.mp3
+*.mp4
+*.mpg
+*.mpeg
+*.mpgx
+*.ogg
+*.wav
+*.webm
+*.wma
+*.wmv
+
+
