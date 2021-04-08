@@ -1,0 +1,38 @@
+[user]
+	name = name
+	email = name@example.com
+  
+[core]
+	excludesfile = /home/user/git/config/git/gitignore-global
+	editor = nano
+
+[gui]
+	editor = code
+  
+[alias]
+	ad = add -A
+	br = branch
+	df = diff
+	dfl = diff -B -U0 
+	dfw = diff -B -U0 --color-words 
+	fp0 = format-patch -U0 -p --ignore-blank-lines --suffix=.log -o patches
+	fp2 = format-patch -U2 -p --ignore-blank-lines --suffix=.log -o patches
+	ci = commit
+	cia = commit -A
+	co = checkout
+	re = remote
+	st = status
+	lo = log --graph --decorate --pretty --oneline --abbrev-commit --all -n 20
+	pushtags = push --tags
+
+	pom = push origin master
+	fom = fetch origin master
+	fum = fetch upstream master
+
+	pos = push origin staging
+	fos = fetch origin staging
+	fus = fetch upstream staging
+
+	pod = push origin develop
+	fod = fetch origin develop
+	fud = fetch upstream develop
