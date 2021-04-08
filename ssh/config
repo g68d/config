@@ -1,0 +1,9 @@
+Host bitbucket.org
+Hostname altssh.bitbucket.org
+IdentityFile ~/.ssh/id_rsa.pub
+Port 443
+
+Host github.com
+Hostname ssh.github.com
+IdentityFile ~/.ssh/id_rsa.pub
+Port 443
